@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="一吃一符 — 旺旺仙貝 × 大甲媽祖。風吹祝福出去，我把祝福吃進去。">
+<title>一吃一符 | 旺旺仙貝 × 大甲媽祖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;700;900&family=Inter:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ LOADER ══ -->
+<div id="loader" class="loader">
+  <svg class="loader-symbol" viewBox="0 0 120 120" aria-hidden="true">
+    <circle class="loader-ring" cx="60" cy="60" r="54"
+      stroke="#C9A84C" stroke-width="1.5"
+      stroke-dasharray="339" stroke-dashoffset="339" fill="none"/>
+    <text x="60" y="68" text-anchor="middle"
+      font-family="Noto Serif TC,serif" font-size="48" font-weight="900" fill="#C9A84C">符</text>
+  </svg>
+  <div class="loader-text">一吃一符</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- ══ HEADER ══ -->
+<header id="header" class="header">
+  <div class="header-inner">
+    <a href="#s01" class="header-logo">一吃一符</a>
+    <div class="header-info">
+      <span id="slideTitle" class="header-title"></span>
+      <span id="slideCounter" class="header-counter">01 / 15</span>
+    </div>
+    <button id="menuBtn" class="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="headerProgress" class="header-progress"></div>
+</header>
+
+<!-- ══ DOT NAV ══ -->
+<nav id="dotNav" class="dot-nav" aria-label="章節導覽">
+  <button class="dot active" data-target="s01" title="01 封面"></button>
+  <button class="dot" data-target="s02" title="02 為何此計畫"></button>
+  <button class="dot" data-target="s03" title="03 為何媽祖"></button>
+  <button class="dot" data-target="s04" title="04 為何旺旺"></button>
+  <button class="dot" data-target="s05" title="05 色彩靈感"></button>
+  <button class="dot" data-target="s06" title="06 一吃一符概念"></button>
+  <button class="dot" data-target="s07" title="07 產品系統"></button>
+  <button class="dot" data-target="s08" title="08 包裝設計"></button>
+  <button class="dot" data-target="s09" title="09 網站體驗"></button>
+  <button class="dot" data-target="s10" title="10 消費者旅程"></button>
+  <button class="dot" data-target="s11" title="11 Alex Honnold"></button>
+  <button class="dot" data-target="s12" title="12 Alex 故事"></button>
+  <button class="dot" data-target="s13" title="13 見證影片"></button>
+  <button class="dot" data-target="s14" title="14 未來展望"></button>
+  <button class="dot" data-target="s15" title="15 結語"></button>
+</nav>
+
+<!-- ══ FULLSCREEN MENU ══ -->
+<div id="fullMenu" class="full-menu" aria-hidden="true">
+  <button id="menuClose" class="menu-close" aria-label="關閉選單">✕</button>
+  <nav class="full-menu-nav">
+    <a href="#s01" class="fm-link"><span class="fm-num">01</span>封面</a>
+    <a href="#s02" class="fm-link"><span class="fm-num">02</span>為何此計畫</a>
+    <a href="#s03" class="fm-link"><span class="fm-num">03</span>為何大甲媽祖</a>
+    <a href="#s04" class="fm-link"><span class="fm-num">04</span>為何旺旺仙貝</a>
+    <a href="#s05" class="fm-link"><span class="fm-num">05</span>色彩靈感</a>
+    <a href="#s06" class="fm-link"><span class="fm-num">06</span>一吃一符概念</a>
+    <a href="#s07" class="fm-link"><span class="fm-num">07</span>產品系統</a>
+    <a href="#s08" class="fm-link"><span class="fm-num">08</span>包裝設計</a>
+    <a href="#s09" class="fm-link"><span class="fm-num">09</span>網站體驗設計</a>
+    <a href="#s10" class="fm-link"><span class="fm-num">10</span>消費者旅程</a>
+    <a href="#s11" class="fm-link"><span class="fm-num">11</span>Alex Honnold</a>
+    <a href="#s12" class="fm-link"><span class="fm-num">12</span>Alex的故事</a>
+    <a href="#s13" class="fm-link"><span class="fm-num">13</span>見證影片</a>
+    <a href="#s14" class="fm-link"><span class="fm-num">14</span>未來展望</a>
+    <a href="#s15" class="fm-link"><span class="fm-num">15</span>結語</a>
+  </nav>
+</div>
+
+<!-- ════════════════════════════════════
+     SLIDES — image in frame, actions below
+════════════════════════════════════ -->
+
+<!-- S01 ─ COVER -->
+<section id="s01" class="slide" data-num="01" data-title="封面">
+  <div class="slide-frame">
+    <img src="images/slide-01.jpg" alt="一吃一符 封面" class="slide-img reveal">
+  </div>
+  <div class="slide-action reveal" data-delay="300">
+    <a href="#s02" class="btn-gold">開始祈福旅程 →</a>
+  </div>
+  <div class="rainbow-bar">
+    <div style="background:#F5C518"></div>
+    <div style="background:#4CAF50"></div>
+    <div style="background:#F44336"></div>
+    <div style="background:#E8E4D9"></div>
+    <div style="background:#9C27B0"></div>
+    <div style="background:#2196F3"></div>
+  </div>
+</section>
+
+<!-- S02 ─ WHY PROJECT -->
+<section id="s02" class="slide" data-num="02" data-title="為何此計畫">
+  <div class="slide-frame">
+    <img src="images/slide-02.jpg" alt="為何此計畫" class="slide-img reveal">
+  </div>
+  <div class="slide-action reveal" data-delay="200">
+    <div class="stat-row">
+      <div class="stat">
+        <span class="stat-n"><span class="counter" data-target="73">0</span>%</span>
+        <span class="stat-l">台灣年輕人不瞭解遶境文化</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-n"><span class="counter" data-target="340">0</span>km</span>
+        <span class="stat-l">媽祖遶境全程，九天八夜</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-n">2M+</span>
+        <span class="stat-l">每年參與信眾人數</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S03 ─ WHY MAZU (image only) -->
+<section id="s03" class="slide" data-num="03" data-title="為何大甲媽祖">
+  <div class="slide-frame">
+    <img src="images/slide-03.jpg" alt="為何大甲媽祖" class="slide-img reveal">
+  </div>
+</section>
+
+<!-- S04 ─ WHY WANT WANT (image only) -->
+<section id="s04" class="slide" data-num="04" data-title="為何旺旺仙貝">
+  <div class="slide-frame">
+    <img src="images/slide-04.jpg" alt="為何旺旺仙貝" class="slide-img reveal">
+  </div>
+</section>
+
+<!-- S05 ─ COLOUR INSPIRATION -->
+<section id="s05" class="slide" data-num="05" data-title="色彩靈感">
+  <div class="slide-frame">
+    <img src="images/slide-05.jpg" alt="色彩靈感 六色祝福" class="slide-img reveal">
+  </div>
+  <div class="slide-action reveal" data-delay="200">
+    <div class="blessing-row">
+      <button class="bles-btn" style="--bc:#F5C518" data-blessing="wealth">財運</button>
+      <button class="bles-btn" style="--bc:#4CAF50" data-blessing="health">健康</button>
+      <button class="bles-btn" style="--bc:#F44336" data-blessing="love">愛情</button>
+      <button class="bles-btn" style="--bc:#E0DDD0" data-blessing="longevity">長壽</button>
+      <button class="bles-btn" style="--bc:#9C27B0" data-blessing="relations">人緣</button>
+      <button class="bles-btn" style="--bc:#2196F3" data-blessing="career">事業</button>
+    </div>
+  </div>
+</section>
+
+<!-- S06 ─ CONCEPT (image only) -->
+<section id="s06" class="slide" data-num="06" data-title="一吃一符概念">
+  <div class="slide-frame">
+    <img src="images/slide-06.jpg" alt="一吃一符概念" class="slide-img reveal">
+  </div>
+</section>
+
+<!-- S07 ─ PRODUCT SYSTEM -->
+<section id="s07" class="slide" data-num="07" data-title="產品系統">
+  <div class="slide-frame">
+    <img src="images/slide-07.jpg" alt="產品系統" class="slide-img reveal">
+  </div>
+  <div class="slide-action reveal" data-delay="200">
+    <div class="product-row" id="productPicker">
+      <button class="prod-btn" data-blessing="wealth"    style="--pc:#F5C518">
+        <span class="prod-zh">財運符</span><span class="prod-en">Wealth</span>
+      </button>
+      <button class="prod-btn" data-blessing="health"    style="--pc:#4CAF50">
+        <span class="prod-zh">健康符</span><span class="prod-en">Health</span>
+      </button>
+      <button class="prod-btn" data-blessing="love"      style="--pc:#F44336">
+        <span class="prod-zh">愛情符</span><span class="prod-en">Love</span>
+      </button>
+      <button class="prod-btn" data-blessing="longevity" style="--pc:#C8C4B8">
+        <span class="prod-zh">長壽符</span><span class="prod-en">Longevity</span>
+      </button>
+      <button class="prod-btn" data-blessing="relations" style="--pc:#9C27B0">
+        <span class="prod-zh">人緣符</span><span class="prod-en">Harmony</span>
+      </button>
+      <button class="prod-btn" data-blessing="career"    style="--pc:#2196F3">
+        <span class="prod-zh">事業符</span><span class="prod-en">Career</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- S08 ─ PACKAGING (image only) -->
+<section id="s08" class="slide" data-num="08" data-title="包裝設計">
+  <div class="slide-frame">
+    <img src="images/slide-08.jpg" alt="包裝設計" class="slide-img reveal">
+  </div>
+</section>
+
+<!-- S09 ─ WEBSITE EXPERIENCE -->
+<section id="s09" class="slide" data-num="09" data-title="網站體驗設計">
+  <div class="slide-frame">
+    <img src="images/slide-09.jpg" alt="網站體驗設計" class="slide-img reveal">
+  </div>
+  <div class="slide-action reveal" data-delay="200">
+    <a href="#s10" class="btn-outline">探索消費者旅程 →</a>
+  </div>
+</section>
+
+<!-- S10 ─ CUSTOMER JOURNEY (image only) -->
+<section id="s10" class="slide" data-num="10" data-title="消費者旅程">
+  <div class="slide-frame">
+    <img src="images/slide-10.jpg" alt="消費者旅程" class="slide-img reveal">
+  </div>
+</section>
+
+<!-- S11 ─ ALEX HONNOLD (image only) -->
+<section id="s11" class="slide" data-num="11" data-title="Alex Honnold">
+  <div class="slide-frame">
+    <img src="images/slide-11.jpg" alt="Alex Honnold 品牌大使" class="slide-img reveal">
+  </div>
+</section>
+
+<!-- S12 ─ ALEX STORY (image only) -->
+<section id="s12" class="slide" data-num="12" data-title="Alex的故事">
+  <div class="slide-frame">
+    <img src="images/slide-12.jpg" alt="Alex Honnold 的故事" class="slide-img reveal">
+  </div>
+</section>
+
+<!-- S13 ─ TESTIMONIAL VIDEO -->
+<section id="s13" class="slide" data-num="13" data-title="客戶見證影片">
+  <div class="slide-frame video-frame">
+    <img src="images/slide-13.jpg" alt="客戶見證影片" class="slide-img reveal">
+    <!-- play button sits inside the frame, centered, not overlapping any text -->
+    <div class="video-play" id="videoPlayArea" role="button" tabindex="0" aria-label="播放見證影片">
+      <div class="play-rings">
+        <div class="play-ring r1"></div>
+        <div class="play-ring r2"></div>
+        <div class="play-ring r3"></div>
+      </div>
+      <div class="play-icon">▶</div>
+    </div>
+  </div>
+  <div class="slide-action reveal" data-delay="400">
+    <span class="video-meta">見證影片 · 01:30 · Testimonial</span>
+  </div>
+</section>
+
+<!-- S14 ─ FUTURE VISION (image only) -->
+<section id="s14" class="slide" data-num="14" data-title="未來展望">
+  <div class="slide-frame">
+    <img src="images/slide-14.jpg" alt="未來展望" class="slide-img reveal">
+  </div>
+</section>
+
+<!-- S15 ─ FINALE -->
+<section id="s15" class="slide" data-num="15" data-title="一吃一符">
+  <div class="slide-frame">
+    <img src="images/slide-15.jpg" alt="風吹祝福出去，我把祝福吃進去" class="slide-img reveal">
+  </div>
+  <div class="slide-action reveal" data-delay="300">
+    <a href="#s07" class="btn-gold">選擇你的祝福 →</a>
+    <span class="finale-note">媽祖包庇 · Mazu Bless You</span>
+  </div>
+  <div class="rainbow-bar">
+    <div style="background:#F5C518"></div>
+    <div style="background:#4CAF50"></div>
+    <div style="background:#F44336"></div>
+    <div style="background:#E8E4D9"></div>
+    <div style="background:#9C27B0"></div>
+    <div style="background:#2196F3"></div>
+  </div>
+</section>
+
+<!-- ══ TOAST ══ -->
+<div id="toast" class="toast" role="alert" aria-live="polite">
+  <span id="toastIcon" class="toast-icon"></span>
+  <div>
+    <strong id="toastTitle"></strong>
+    <span id="toastMsg"></span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
